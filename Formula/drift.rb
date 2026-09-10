@@ -5,21 +5,21 @@
 class Drift < Formula
   desc "Terminal screensaver and ambient visualiser"
   homepage "https://github.com/phlx0/drift"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/phlx0/drift/releases/download/v1.2.0/drift_darwin_amd64.tar.gz"
-      sha256 "c944663f25f6a030521a8327a4751ade5403a8de54fc4bc6cc089a1e326addd2"
+      url "https://github.com/phlx0/drift/releases/download/v1.3.0/drift_darwin_amd64.tar.gz"
+      sha256 "18d6a216bb212db012b0d2f05e49083cbc54549295dbf7116287f3d34447f9d1"
 
       define_method(:install) do
         bin.install "drift"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/phlx0/drift/releases/download/v1.2.0/drift_darwin_arm64.tar.gz"
-      sha256 "4f3fe08604eeedde8ef149a5d777879943799668e9fb54480e084df35e66aeb1"
+      url "https://github.com/phlx0/drift/releases/download/v1.3.0/drift_darwin_arm64.tar.gz"
+      sha256 "ddeb1d5894aa274df48938949119e1c555680d5fd5364ea99eb1fdc114b59a7c"
 
       define_method(:install) do
         bin.install "drift"
@@ -29,15 +29,15 @@ class Drift < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phlx0/drift/releases/download/v1.2.0/drift_linux_amd64.tar.gz"
-      sha256 "0315e1230f0a8cd1679b33a135a25ad537b08462a1e1c62d01388e90ac68b8b9"
+      url "https://github.com/phlx0/drift/releases/download/v1.3.0/drift_linux_amd64.tar.gz"
+      sha256 "5e9083ab1e8705c74452d66fa2f0175fc442a415340ac8c3b82faaf104a9c720"
       define_method(:install) do
         bin.install "drift"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phlx0/drift/releases/download/v1.2.0/drift_linux_arm64.tar.gz"
-      sha256 "64d73c6be06ddf639b61072e6b793c133f0c1c6088f4569f0d2ca8162d5f452b"
+      url "https://github.com/phlx0/drift/releases/download/v1.3.0/drift_linux_arm64.tar.gz"
+      sha256 "9cf38bfbbe1a9b6e5b0dcde08f07a33082e1e8fdeb0e891dc8e321f95244e86c"
       define_method(:install) do
         bin.install "drift"
       end
